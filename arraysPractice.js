@@ -1,48 +1,39 @@
 //Once you complete a problem, open up Chrome and check the answer in the console.
-
-
 var arr = [10,20,30];
 //Create a function named 'first' that is given 'arr' as the argument and  returns the first item in the given array.
-
   //Code Here
-
+function first(arr){
+  return arr[0];
+}
 
 //Next problem
-
-
-
 var arr = [40,50,60];
 //Create a function named 'last' that is given 'arr' as the argument and returns the last item in the given array.
-
-
-  //Code Here
-
+ //Code Here
+ function last(arr) {
+   return arr[length-1];
+ }
 
 //Next Problem
-
-
 var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
-//Create a function named 'looper' that is given family as it's only argument, loops through the given array, and alerts every item in the array.
-
+//Create a function named 'looper' that is given family as it's only argument, loops through the given array,
+// and alerts every item in the array.
   //Code Here
-
+function Looper(family) {
+  for (var person in family) // family, loop through the given array
+    alert([person]);//allert every item
+}
 
 //Next problem
-
-
-
 var letters = ['A', 'B', 'C', 'D', 'E'];
-//Write a function called reversedLooper that is given letters as it's only argument and loops through the given array backwards alerting every item in the array starting at the end.
-
+//Write a function called reversedLooper that is given letters as it's only argument
+//and loops through the given array backwards alerting every item in the array starting at the end.
   //Code Here
 
 
 //Next Problem
-
-
 var nums = [1,2,3,6,22,98,45,23,22,12];
 //Write a function named evenFinder that is given nums as it's only argument and removes all values that aren't even from the given array.
-
   //Code Here
 
 
@@ -88,12 +79,12 @@ var str = 'this is my sentence';
 var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 /*
   Here we're going to write a function that mimics going shopping and checking things off of our grocery list,
-  and adding new items to our list. 
-  
+  and adding new items to our list.
+
   Write a function called removeItem that is given two arguments, the first is myGroceryList, and the
   second is an item to remove from myGroceryList. If the second argument (or the item to add or remove) matches an item in myGroceryList,
-  remove that item from the your grocery list and return the new, updated grocery list. 
-  
+  remove that item from the your grocery list and return the new, updated grocery list.
+
   Once you do that, write another function called addItem that is given two arguments, the first is myGroceryList
   and the second is an item to add to your grocery list. In addItem add the item you passed in to
   myGroceryList then return the new, updated grocery list.
@@ -153,9 +144,9 @@ for(var i = 0; i < num2; i++){
 */
 
   //Code Here
-  
-  
-  
+
+
+
 
 //NEXT PROBLEM
 
@@ -265,4 +256,3 @@ Once you find the particular index he's located in, delete him from the array.*/
   //Code Here
 
 //The activity we just did is very much how data works in 'the real world'.
-
