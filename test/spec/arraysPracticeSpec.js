@@ -103,8 +103,7 @@ describe('arraysPractice', function () {
 		it('should be a function', function () {
 			expect(finder).toEqual(jasmine.any(Function));
 		})
-		it('should return a boolean', function () {
-			expect(finder([])).toEqual(jasmine.any(Boolean));
+		it('should return a boolean', function () {expect(finder([])).toEqual(jasmine.any(Boolean));
 		})
 		it('should return true if the random number is found in the array', function () {
 			var rand = spyOn(window, 'getRandomArbitrary').and.returnValue(3);
@@ -134,17 +133,17 @@ describe('arraysPractice', function () {
 	describe('removeItem', function () {
 		it('should exist', function () {
 			expect(removeItem).toBeDefined();
-		})
+		});
 		it('should be a function', function () {
 			expect(removeItem).toEqual(jasmine.any(Function));
-		})
+		});
 		it('should return an array', function () {
 			expect(removeItem()).toEqual(jasmine.any(Array));
-		})
+		});
 		it('should remove an item from a groceryList array (if it is in the array)', function () {
 			var groceryList = ['chips', 'soda', 'celery', 'pizza'];
-			var item = 'chips'
-			var expected = ['soda', 'celery', 'pizza']
+			var item = 'chips';
+			var expected = ['soda', 'celery', 'pizza'];
 			var itemExists = removeItem(groceryList, item);
 			expect(itemExists).toEqual(expected);
 		})
@@ -209,7 +208,7 @@ describe('arraysPractice', function () {
 			//could be passed numbers as numbers or strings
 			var arr = [1, '2', 3];
 			var expected = [11, 12, 13];
-			expect(addTen(arr)).toEqual(expected);	
+			expect(addTen(arr)).toEqual(expected);
 		})
 	})
 	describe('longer', function () {
